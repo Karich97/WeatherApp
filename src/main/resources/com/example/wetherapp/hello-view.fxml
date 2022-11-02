@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="553.0" prefWidth="434.0" style="-fx-background-color: #333;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.wetherapp.Controller">
+   <children>
+      <AnchorPane prefHeight="76.0" prefWidth="434.0" style="-fx-background-color: black;">
+         <children>
+            <Text fill="WHITE" layoutX="135.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Weather" wrappingWidth="164.61328125">
+               <font>
+                  <Font size="43.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <TextField id="city" fx:id="city" alignment="CENTER" focusTraversable="false" layoutX="69.0" layoutY="90.0" prefHeight="38.0" prefWidth="286.0" promptText="Type the City" style="-fx-background-color: #777; -fx-border-color: red; -fx-border-radius: 7px;" text="Type the City">
+         <font>
+            <Font size="25.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </TextField>
+      <Button id="getData" fx:id="getData" layoutX="124.0" layoutY="166.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="186.0" text="To chek the weather" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Text id="Pressure" fx:id="pressure" fill="WHITE" layoutX="73.0" layoutY="515.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pressure:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text id="Min" fx:id="min" fill="WHITE" layoutX="73.0" layoutY="462.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Min:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text id="Max" fx:id="max" fill="WHITE" layoutX="73.0" layoutY="407.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Max:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text id="Feels" fx:id="feels" fill="WHITE" layoutX="73.0" layoutY="349.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Feels:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text id="Temperature" fx:id="temperature" fill="WHITE" layoutX="77.0" layoutY="297.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Temperature">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text id="Information" fx:id="information" fill="RED" layoutX="132.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Information:" textAlignment="CENTER">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
